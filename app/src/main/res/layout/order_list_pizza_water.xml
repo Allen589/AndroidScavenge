@@ -1,116 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Constraint_Layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/trans_screen_1"
+    android:background="@drawable/order_list_water_pizza"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/pizza_increase_bttn"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@null"
-        android:layout_width="24dp"
-        android:layout_height="20dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginRight="42dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.997"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309" />
-
-    <Button
-        android:id="@+id/pizza_decrease_bttn"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@null"
-        android:layout_width="25dp"
-        android:layout_height="23dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginRight="43dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
-
-    <Button
-        android:id="@+id/water_decrease_bttn"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@null"
-        android:layout_width="25dp"
-        android:layout_height="23dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545" />
-
-    <Button
-        android:id="@+id/water_increase_bttn"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@null"
-        android:layout_width="25dp"
-        android:layout_height="23dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.891"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
-        android:id="@+id/pizza_cntr"
-        android:layout_width="28dp"
-        android:layout_height="44dp"
+        android:id="@+id/pizza_amnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/_0"
         android:textColor="#2196F3"
-        android:textSize="35sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.778"
+        app:layout_constraintHorizontal_bias="0.015"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
+        app:layout_constraintVertical_bias="0.245" />
 
     <TextView
-        android:id="@+id/water_cntr"
-        android:layout_width="30dp"
-        android:layout_height="45dp"
+        android:id="@+id/total_cost"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:text="@string/_0_01"
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922" />
+
+    <TextView
+        android:id="@+id/water_amnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/_0"
         android:textColor="#2196F3"
-        android:textSize="35sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintHorizontal_bias="0.015"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
-
-    <TextView
-        android:id="@+id/amnt_cntr"
-        android:layout_width="23dp"
-        android:layout_height="35dp"
-        android:text="@string/_0"
-        android:textColor="#E91E63"
-        android:textSize="25sp"
-        tools:layout_editor_absoluteX="321dp"
-        tools:layout_editor_absoluteY="27dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.804"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.444" />
 
     <Button
-        android:id="@+id/order_bttn"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="411dp"
-        android:layout_height="48dp"
+        android:id="@+id/order_more"
+        android:layout_width="205dp"
+        android:layout_height="49dp"
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,6 +62,32 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
+        android:id="@+id/pay_bttn"
+        android:layout_width="205dp"
+        android:layout_height="49dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/amnt_cntr"
+        android:layout_width="23dp"
+        android:layout_height="35dp"
+        android:text="@string/_0"
+        android:textColor="#E91E63"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
         android:id="@+id/back_bttn"
         android:layout_width="47dp"
         android:layout_height="47dp"
@@ -144,5 +112,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
