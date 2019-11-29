@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -45,7 +44,8 @@ public class order_activity extends AppCompatActivity {
         (findViewById(R.id.pay_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // Go to Pay Screen.
+                Intent intent = new Intent(getApplicationContext(), transactionPaymentOptionScreen.class);
+                startActivity(intent);
             }
         });
         // Here we can go to the home page
