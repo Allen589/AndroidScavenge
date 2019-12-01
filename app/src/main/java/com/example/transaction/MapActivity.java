@@ -33,4 +33,12 @@ public class MapActivity extends AppCompatActivity {
         });
     }
 
+    public void post(View view){
+
+    }
+    public void browse(View view){
+
+        Intent intent = new Intent(getApplicationContext(), EventList.class);
+        startActivity(intent);
+    }
 }
