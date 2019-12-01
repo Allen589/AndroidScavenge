@@ -75,13 +75,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Go to Home Screen.
+                Intent intent = new Intent(getApplicationContext(), MapActivity.class);
+                startActivity(intent);
             }
         });
         // Here we can go to the previous screen.In this case, it is the order more screen.
         (findViewById(R.id.back_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Go to Previous Screen.
+                // Go to Event Details
+                // *** SET TO EVENT DETAILS PAGE ***
+                Intent intent = new Intent(getApplicationContext(), EventDetails.class);
+                startActivity(intent);
             }
         });
     }
