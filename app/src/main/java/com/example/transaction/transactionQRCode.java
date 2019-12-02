@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 
 public class transactionQRCode extends AppCompatActivity {
@@ -18,6 +19,8 @@ public class transactionQRCode extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // go to home here
+                Global.pizzaCount = 0;
+                Global.waterCount = 0;
                 Intent intent = new Intent(getApplicationContext(), MapActivity.class);
                 startActivity(intent);
             }

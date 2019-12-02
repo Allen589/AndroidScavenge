@@ -39,8 +39,17 @@ public class transactionApplePay extends AppCompatActivity {
             }
         });
 
-        // Here we can go to the previous screen. In this case, it is the payment option screen.
+        // Here we can go to the previous screen to the payment option screen.
         (findViewById(R.id.back_bttn)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), transactionPaymentOptionScreen.class);
+                startActivity(intent);
+            }
+        });
+
+        // Here we can go to the previous screen to the payment option screen.
+        (findViewById(R.id.change_payment_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), transactionPaymentOptionScreen.class);

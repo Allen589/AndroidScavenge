@@ -48,5 +48,13 @@ public class transactionGooglePay extends AppCompatActivity {
             }
         });
 
+        (findViewById(R.id.change_payment_bttn)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), transactionPaymentOptionScreen.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

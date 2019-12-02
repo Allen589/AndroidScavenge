@@ -56,15 +56,26 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/pay_bttn"
-        android:layout_width="411dp"
+        android:id="@+id/change_payment_bttn"
+        android:layout_width="289dp"
         android:layout_height="50dp"
-        android:layout_marginTop="235dp"
-        android:layout_marginBottom="1dp"
-        android:background="#00EBDFDF"
+        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/total_cost" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <Button
+        android:id="@+id/pay_bttn"
+        android:layout_width="409dp"
+        android:layout_height="51dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
