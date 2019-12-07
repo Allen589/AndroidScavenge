@@ -35,6 +35,8 @@ public class MapActivity extends AppCompatActivity {
 
     public void post(View view){
 
+        Intent intent = new Intent(getApplicationContext(), PostActivity.class);
+        startActivity(intent);
     }
     public void browse(View view){
 
