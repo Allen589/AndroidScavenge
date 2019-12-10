@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EventList"></activity>
+        <activity android:name=".expand3"></activity>
+        <activity android:name=".expand2" />
+        <activity android:name=".expand1" />
+        <activity android:name=".description_expand" />
+        <activity android:name=".EventList" />
         <activity android:name=".MapActivity" />
         <activity android:name=".WelcomeActivity">
             <intent-filter>
@@ -24,7 +28,7 @@
         <activity android:name=".transactionApplePay" />
         <activity android:name=".transactionPaymentOptionScreen" />
         <activity android:name=".order_activity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
