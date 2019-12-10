@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PostActivity"></activity>
+        <activity android:name=".expand3"></activity>
+        <activity android:name=".expand2" />
+        <activity android:name=".expand1" />
+        <activity android:name=".description_expand" />
         <activity android:name=".EventList" />
         <activity android:name=".MapActivity" />
         <activity android:name=".WelcomeActivity">
