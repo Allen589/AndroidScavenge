@@ -12,6 +12,7 @@
         android:id="@+id/button2"
         android:layout_width="107dp"
         android:layout_height="47dp"
+        android:layout_marginTop="68dp"
         android:alpha="0"
         android:onClick="post"
         app:layout_constraintBottom_toBottomOf="@+id/button3"
