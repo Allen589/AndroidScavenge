@@ -31,6 +31,16 @@ public class MapActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Goes to profile
+        (findViewById(R.id.profile_btn)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), profile.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void post(View view){

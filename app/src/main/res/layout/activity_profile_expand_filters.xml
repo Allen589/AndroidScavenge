@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile3"
+    tools:context=".profileExpandFilters">
+
+    <TextView
+        android:id="@+id/profile_back_btn3"
+        android:layout_width="88dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="323dp"
+        android:layout_marginRight="323dp"
+        android:layout_marginBottom="660dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aff_clubs2"
+        android:layout_width="340dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="462dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/close_filters2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_back_btn3" />
+
+    <TextView
+        android:id="@+id/close_filters2"
+        android:layout_width="336dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aff_clubs2" />
+
+    <TextView
+        android:id="@+id/profile_qr_code2"
+        android:layout_width="330dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="377dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="21dp"
+        android:text="Get QR Code"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/aff_clubs2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_back_btn3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,15 @@ public class EventList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_list);
+
+        (findViewById(R.id.activity_event_list_profile_btn)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), profile.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void event(View view){

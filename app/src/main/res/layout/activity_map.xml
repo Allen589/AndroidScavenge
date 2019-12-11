@@ -57,5 +57,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.329" />
 
+    <TextView
+        android:id="@+id/profile_btn"
+        android:layout_width="81dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="343dp"
+        android:layout_marginLeft="343dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="675dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
