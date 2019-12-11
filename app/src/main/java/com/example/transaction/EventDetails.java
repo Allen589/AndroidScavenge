@@ -2,11 +2,9 @@ package com.example.transaction;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.RelativeLayout;
 
 public class EventDetails extends AppCompatActivity {
     @Override

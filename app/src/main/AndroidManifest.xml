@@ -14,9 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Submitted"></activity>
-        <activity android:name=".expand3" />
-        <activity android:name=".expand2" />
-        <activity android:name=".expand1" />
+        <activity android:name=".EventExpandWhere" />
+        <activity android:name=".EventExpandWhen" />
+        <activity android:name=".EventExpandDescription" />
         <activity android:name=".PostActivity" />
         <activity android:name=".EventList" />
         <activity android:name=".MapActivity" />
@@ -34,6 +34,7 @@
         <activity android:name=".transactionPaymentOptionScreen" />
         <activity android:name=".order_activity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".ChatActivity" />
     </application>
 
 </manifest>

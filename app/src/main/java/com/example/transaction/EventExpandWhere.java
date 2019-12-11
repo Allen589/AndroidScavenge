@@ -38,7 +38,7 @@ public class EventExpandWhere extends AppCompatActivity {
         (findViewById(R.id.where_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), EventExpandWhere.class);
+                Intent intent = new Intent(getApplicationContext(), EventDetails.class);
                 startActivity(intent);
             }
         });

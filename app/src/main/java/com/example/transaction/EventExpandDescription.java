@@ -33,7 +33,7 @@ public class EventExpandDescription extends AppCompatActivity {
         (findViewById(R.id.description_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), EventExpandDescription.class);
+                Intent intent = new Intent(getApplicationContext(), EventDetails.class);
                 startActivity(intent);
             }
         });

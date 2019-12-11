@@ -11,6 +11,14 @@ public class EventExpandWhen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_when_expand);
+        (findViewById(R.id.back_bttn)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MapActivity.class);
+                startActivity(intent);
+            }
+        });
+
         (findViewById(R.id.buy_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,7 +46,7 @@ public class EventExpandWhen extends AppCompatActivity {
         (findViewById(R.id.when_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), EventExpandWhen.class);
+                Intent intent = new Intent(getApplicationContext(), EventDetails.class);
                 startActivity(intent);
             }
         });
