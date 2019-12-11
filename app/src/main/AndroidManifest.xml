@@ -17,6 +17,10 @@
         <activity android:name=".EventExpandWhere" />
         <activity android:name=".EventExpandWhen" />
         <activity android:name=".EventExpandDescription" />
+        <activity android:name=".profileExpandFilters"></activity>
+        <activity android:name=".profileExpandClubs" />
+        <activity android:name=".profile" />
+        <activity android:name=".Submitted" />
         <activity android:name=".PostActivity" />
         <activity android:name=".EventList" />
         <activity android:name=".MapActivity" />
