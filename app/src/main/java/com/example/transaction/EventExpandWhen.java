@@ -1,17 +1,16 @@
 package com.example.transaction;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class expand3 extends AppCompatActivity {
+public class EventExpandWhen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_expand3);
+        setContentView(R.layout.activity_when_expand);
         (findViewById(R.id.buy_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -23,7 +22,7 @@ public class expand3 extends AppCompatActivity {
         (findViewById(R.id.description_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), expand1.class);
+                Intent intent = new Intent(getApplicationContext(), EventExpandDescription.class);
                 startActivity(intent);
             }
         });
@@ -31,7 +30,7 @@ public class expand3 extends AppCompatActivity {
         (findViewById(R.id.where_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), expand2.class);
+                Intent intent = new Intent(getApplicationContext(), EventExpandWhere.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +38,15 @@ public class expand3 extends AppCompatActivity {
         (findViewById(R.id.when_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), EventDetails.class);
+                Intent intent = new Intent(getApplicationContext(), EventExpandWhen.class);
+                startActivity(intent);
+            }
+        });
+
+        (findViewById(R.id.chat_bttn)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
                 startActivity(intent);
             }
         });

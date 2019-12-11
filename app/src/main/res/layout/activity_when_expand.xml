@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/expand_list2"
-    tools:context=".EventDetails">
+    android:background="@drawable/expand_list3"
+    tools:context=".expand3">
 
     <Button
         android:id="@+id/back_bttn"

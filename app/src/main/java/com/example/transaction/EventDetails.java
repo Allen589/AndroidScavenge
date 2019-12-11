@@ -33,7 +33,7 @@ public class EventDetails extends AppCompatActivity {
         (findViewById(R.id.description_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), expand1.class);
+                Intent intent = new Intent(getApplicationContext(), EventExpandDescription.class);
                 startActivity(intent);
             }
         });
@@ -41,7 +41,7 @@ public class EventDetails extends AppCompatActivity {
         (findViewById(R.id.where_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), expand2.class);
+                Intent intent = new Intent(getApplicationContext(), EventExpandWhere.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +49,15 @@ public class EventDetails extends AppCompatActivity {
         (findViewById(R.id.when_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), expand3.class);
+                Intent intent = new Intent(getApplicationContext(), EventExpandWhen.class);
+                startActivity(intent);
+            }
+        });
+
+        (findViewById(R.id.chat_bttn)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
                 startActivity(intent);
             }
         });
