@@ -4,14 +4,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ChatActivity extends AppCompatActivity {
+public class ChatActivityAfter extends AppCompatActivity {
+    String receivedText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat_init);
+        setContentView(R.layout.activity_chat_after);
+
+        Intent i = getIntent();
+        receivedText = i.getStringExtra("text_label");
+
+        TextView textView = findViewById(R.id.myViewText);
+        textView.setText(receivedText);
+
 
         (findViewById(R.id.back_bttn)).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,5 +53,4 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
     }
-
 }
